@@ -1,0 +1,30 @@
+------[ Tue Nov  1 19:54:01 2016 ]------
+PASS : 1.00 : CV2 - Test if sleep has acquired the lock
+PASS : 2.00 : CV2 - Test if wake has acquired the lock
+PASS : 3.00 : CV2 - Test if wakeAll has acquired the lock
+PASS : 10.00 : CV2 - Test if sleep() sleeps until someone wakes it up
+PASS : 17.00 : CV2 - Test if wake() wakes exactly one sleeping thread
+PASS : 24.00 : CV2 - Test if wakeAll() wakes all the sleeping threads
+PASS : 27.00 : CV2 - Test if wake has no effect when there is no thread sleeping
+PASS : 30.00 : CV2 - Test if wakeAll has no effect when there is no thread sleeping
+FAIL : 30.00 : COMM - many messages, many speak, many listen
+PASS : 38.00 : COMM - Test if speaker blocks until listener has been called
+PASS : 46.00 : COMM - Test if listener blocks until speaker is called
+PASS : 50.00 : COMM - Test if words are listened in the same order they are spoken, when there are multiple threads
+PASS : 52.00 : COMM - Test if extra speakers block when they do not have corresponding listeners
+PASS : 54.00 : COMM - Test if extra listeners block when they do not have corresponding speakers
+PASS : 58.00 : COMM - Test if multiple communicators do not interact with each other
+PASS : 64.00 : JOIN - Test join() after child had finished.
+PASS : 70.00 : JOIN - Test join() before child finishes
+PASS : 72.00 : JOIN - Test join() on different childs right after spawn, one by one
+PASS : 74.00 : JOIN - Test join() on different childs; all children are spawned first, then joined one by one.
+PASS : 76.00 : JOIN - Test differnt threads join different other threads.
+FAIL : 76.00 : JOIN - Test joining same thread multiple times should be an error.
+PASS : 77.00 : JOIN - Test joining oneself should be an error.
+PASS : 79.00 : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : 81.00 : ALARM - Tests whether waitUntil actually wakes up at correct time
+PASS : 83.00 : ALARM - Test if waking up threads in proper order - not necessarily sleep order
+PASS : 93.00 : ALARM - Test if thds are waken up at proper time
+PASS : 95.00 : ALARM - Tests proper handling of negative wait times.
+PASS : 97.00 : ALARM - Tests if mistakenly waking all the threads
+Autograde Score: 97.00 / 100
